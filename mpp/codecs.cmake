@@ -87,7 +87,7 @@ option(ENABLE_H264E  "Enable h.264 encoder" ON)
 if( ENABLE_H264E )
     set(HAVE_H264E true)
     set(CODEC_H264E codec_h264e)
-    set(HAL_H264E hal_h264e)
+    set(HAL_H264E hal_h264e_com hal_h264e_vpu hal_h264e_rkv)
     add_definitions(-DHAVE_H264E)
 endif()
 
